@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace IRF_project
 {
-    public partial class Form1 : Form
+    public partial class Fooldal : Form
     {
         Timer t = new Timer();
-        public Form1()
+        public Fooldal()
         {
             InitializeComponent();
         }
@@ -62,6 +62,15 @@ namespace IRF_project
             }
             Clock.Text = time;
 
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Biztosan ki szeretnél lépni?", "Kilépés", MessageBoxButtons.YesNo);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

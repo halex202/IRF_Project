@@ -1,6 +1,6 @@
 ﻿namespace IRF_project
 {
-    partial class Form1
+    partial class Fooldal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fooldal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Clock = new System.Windows.Forms.Label();
+            this.button_exit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button_exit = new System.Windows.Forms.Button();
-            this.Clock = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +51,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // Clock
+            // 
+            this.Clock.AutoSize = true;
+            this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clock.ForeColor = System.Drawing.Color.White;
+            this.Clock.Location = new System.Drawing.Point(21, 9);
+            this.Clock.Name = "Clock";
+            this.Clock.Size = new System.Drawing.Size(164, 42);
+            this.Clock.TabIndex = 4;
+            this.Clock.Text = "00:00:00";
+            // 
+            // button_exit
+            // 
+            this.button_exit.BackColor = System.Drawing.Color.Red;
+            this.button_exit.FlatAppearance.BorderSize = 0;
+            this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_exit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_exit.ForeColor = System.Drawing.Color.White;
+            this.button_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_exit.Location = new System.Drawing.Point(0, 548);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(200, 52);
+            this.button_exit.TabIndex = 4;
+            this.button_exit.Text = "Kilépés";
+            this.button_exit.UseVisualStyleBackColor = false;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
             // panel2
             // 
@@ -90,33 +117,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button_exit
-            // 
-            this.button_exit.BackColor = System.Drawing.Color.Red;
-            this.button_exit.FlatAppearance.BorderSize = 0;
-            this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_exit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_exit.ForeColor = System.Drawing.Color.White;
-            this.button_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_exit.Location = new System.Drawing.Point(0, 548);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(200, 52);
-            this.button_exit.TabIndex = 4;
-            this.button_exit.Text = "Kilépés";
-            this.button_exit.UseVisualStyleBackColor = false;
-            // 
-            // Clock
-            // 
-            this.Clock.AutoSize = true;
-            this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clock.ForeColor = System.Drawing.Color.White;
-            this.Clock.Location = new System.Drawing.Point(21, 9);
-            this.Clock.Name = "Clock";
-            this.Clock.Size = new System.Drawing.Size(164, 42);
-            this.Clock.TabIndex = 4;
-            this.Clock.Text = "00:00:00";
-            // 
-            // Form1
+            // Fooldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,7 +127,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Fooldal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
