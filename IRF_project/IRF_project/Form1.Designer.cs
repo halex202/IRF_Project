@@ -35,6 +35,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_exit = new System.Windows.Forms.Button();
+            this.Clock = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.Clock);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -94,12 +96,25 @@
             this.button_exit.FlatAppearance.BorderSize = 0;
             this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_exit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_exit.ForeColor = System.Drawing.Color.White;
+            this.button_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_exit.Location = new System.Drawing.Point(0, 548);
             this.button_exit.Name = "button_exit";
             this.button_exit.Size = new System.Drawing.Size(200, 52);
             this.button_exit.TabIndex = 4;
             this.button_exit.Text = "Kilépés";
             this.button_exit.UseVisualStyleBackColor = false;
+            // 
+            // Clock
+            // 
+            this.Clock.AutoSize = true;
+            this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clock.ForeColor = System.Drawing.Color.White;
+            this.Clock.Location = new System.Drawing.Point(21, 9);
+            this.Clock.Name = "Clock";
+            this.Clock.Size = new System.Drawing.Size(164, 42);
+            this.Clock.TabIndex = 4;
+            this.Clock.Text = "00:00:00";
             // 
             // Form1
             // 
@@ -113,7 +128,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -129,6 +146,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Clock;
     }
 }
 
