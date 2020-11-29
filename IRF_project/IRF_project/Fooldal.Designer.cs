@@ -30,12 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fooldal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Golf_btn = new System.Windows.Forms.Button();
+            this.Rugby_btn = new System.Windows.Forms.Button();
+            this.Tennis_btn = new System.Windows.Forms.Button();
+            this.Labdarugas_btn = new System.Windows.Forms.Button();
             this.Clock = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fo_panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,6 +49,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.Golf_btn);
+            this.panel1.Controls.Add(this.Rugby_btn);
+            this.panel1.Controls.Add(this.Tennis_btn);
+            this.panel1.Controls.Add(this.Labdarugas_btn);
             this.panel1.Controls.Add(this.Clock);
             this.panel1.Controls.Add(this.button_exit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -51,6 +60,67 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // Golf_btn
+            // 
+            this.Golf_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Golf_btn.FlatAppearance.BorderSize = 0;
+            this.Golf_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Golf_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Golf_btn.ForeColor = System.Drawing.Color.White;
+            this.Golf_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Golf_btn.Location = new System.Drawing.Point(0, 332);
+            this.Golf_btn.Name = "Golf_btn";
+            this.Golf_btn.Size = new System.Drawing.Size(200, 52);
+            this.Golf_btn.TabIndex = 8;
+            this.Golf_btn.Text = "Golf";
+            this.Golf_btn.UseVisualStyleBackColor = false;
+            // 
+            // Rugby_btn
+            // 
+            this.Rugby_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Rugby_btn.FlatAppearance.BorderSize = 0;
+            this.Rugby_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Rugby_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rugby_btn.ForeColor = System.Drawing.Color.White;
+            this.Rugby_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Rugby_btn.Location = new System.Drawing.Point(0, 274);
+            this.Rugby_btn.Name = "Rugby_btn";
+            this.Rugby_btn.Size = new System.Drawing.Size(200, 52);
+            this.Rugby_btn.TabIndex = 7;
+            this.Rugby_btn.Text = "Rugby";
+            this.Rugby_btn.UseVisualStyleBackColor = false;
+            // 
+            // Tennis_btn
+            // 
+            this.Tennis_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Tennis_btn.FlatAppearance.BorderSize = 0;
+            this.Tennis_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Tennis_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tennis_btn.ForeColor = System.Drawing.Color.White;
+            this.Tennis_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Tennis_btn.Location = new System.Drawing.Point(0, 216);
+            this.Tennis_btn.Name = "Tennis_btn";
+            this.Tennis_btn.Size = new System.Drawing.Size(200, 52);
+            this.Tennis_btn.TabIndex = 6;
+            this.Tennis_btn.Text = "Tennis";
+            this.Tennis_btn.UseVisualStyleBackColor = false;
+            // 
+            // Labdarugas_btn
+            // 
+            this.Labdarugas_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Labdarugas_btn.FlatAppearance.BorderSize = 0;
+            this.Labdarugas_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Labdarugas_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Labdarugas_btn.ForeColor = System.Drawing.Color.White;
+            this.Labdarugas_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Labdarugas_btn.Location = new System.Drawing.Point(3, 158);
+            this.Labdarugas_btn.Name = "Labdarugas_btn";
+            this.Labdarugas_btn.Size = new System.Drawing.Size(200, 52);
+            this.Labdarugas_btn.TabIndex = 5;
+            this.Labdarugas_btn.Text = "Labdarúgás";
+            this.Labdarugas_btn.UseVisualStyleBackColor = false;
+            this.Labdarugas_btn.Click += new System.EventHandler(this.Labdarugas_btn_Click);
             // 
             // Clock
             // 
@@ -117,11 +187,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // fo_panel
+            // 
+            this.fo_panel.Location = new System.Drawing.Point(200, 143);
+            this.fo_panel.Name = "fo_panel";
+            this.fo_panel.Size = new System.Drawing.Size(799, 456);
+            this.fo_panel.TabIndex = 4;
+            // 
             // Fooldal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.fo_panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -148,6 +226,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Clock;
+        private System.Windows.Forms.Button Golf_btn;
+        private System.Windows.Forms.Button Rugby_btn;
+        private System.Windows.Forms.Button Tennis_btn;
+        private System.Windows.Forms.Button Labdarugas_btn;
+        private System.Windows.Forms.Panel fo_panel;
     }
 }
 

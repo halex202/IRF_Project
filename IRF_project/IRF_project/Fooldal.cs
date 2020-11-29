@@ -72,5 +72,12 @@ namespace IRF_project
                 Application.Exit();
             }
         }
+
+        private void Labdarugas_btn_Click(object sender, EventArgs e)
+        {
+            LabdarugasUC uc = new LabdarugasUC();
+            fo_panel.Controls.Clear();
+            fo_panel.Controls.Add(uc);
+        }
     }
 }
