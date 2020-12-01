@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Golf_btn = new System.Windows.Forms.Button();
             this.Rugby_btn = new System.Windows.Forms.Button();
-            this.Labdarugas_btn = new System.Windows.Forms.Button();
+            this.labdarugas_btn = new System.Windows.Forms.Button();
             this.tenisz_btn = new System.Windows.Forms.Button();
             this.Clock = new System.Windows.Forms.Label();
             this.button_exit = new System.Windows.Forms.Button();
@@ -51,7 +51,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.Golf_btn);
             this.panel1.Controls.Add(this.Rugby_btn);
-            this.panel1.Controls.Add(this.Labdarugas_btn);
+            this.panel1.Controls.Add(this.labdarugas_btn);
             this.panel1.Controls.Add(this.tenisz_btn);
             this.panel1.Controls.Add(this.Clock);
             this.panel1.Controls.Add(this.button_exit);
@@ -91,20 +91,21 @@
             this.Rugby_btn.Text = "Rugby";
             this.Rugby_btn.UseVisualStyleBackColor = false;
             // 
-            // Labdarugas_btn
+            // labdarugas_btn
             // 
-            this.Labdarugas_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Labdarugas_btn.FlatAppearance.BorderSize = 0;
-            this.Labdarugas_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Labdarugas_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Labdarugas_btn.ForeColor = System.Drawing.Color.White;
-            this.Labdarugas_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Labdarugas_btn.Location = new System.Drawing.Point(0, 216);
-            this.Labdarugas_btn.Name = "Labdarugas_btn";
-            this.Labdarugas_btn.Size = new System.Drawing.Size(200, 52);
-            this.Labdarugas_btn.TabIndex = 6;
-            this.Labdarugas_btn.Text = "Labdarúgás";
-            this.Labdarugas_btn.UseVisualStyleBackColor = false;
+            this.labdarugas_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labdarugas_btn.FlatAppearance.BorderSize = 0;
+            this.labdarugas_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labdarugas_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labdarugas_btn.ForeColor = System.Drawing.Color.White;
+            this.labdarugas_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labdarugas_btn.Location = new System.Drawing.Point(0, 216);
+            this.labdarugas_btn.Name = "labdarugas_btn";
+            this.labdarugas_btn.Size = new System.Drawing.Size(200, 52);
+            this.labdarugas_btn.TabIndex = 6;
+            this.labdarugas_btn.Text = "Labdarúgás";
+            this.labdarugas_btn.UseVisualStyleBackColor = false;
+            this.labdarugas_btn.Click += new System.EventHandler(this.labdarugas_btn_Click_1);
             // 
             // tenisz_btn
             // 
@@ -228,7 +229,7 @@
         private System.Windows.Forms.Label Clock;
         private System.Windows.Forms.Button Golf_btn;
         private System.Windows.Forms.Button Rugby_btn;
-        private System.Windows.Forms.Button Labdarugas_btn;
+        private System.Windows.Forms.Button labdarugas_btn;
         private System.Windows.Forms.Button tenisz_btn;
         private System.Windows.Forms.Panel fo_panel;
     }

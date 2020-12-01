@@ -79,5 +79,12 @@ namespace IRF_project
             fo_panel.Controls.Clear();
             fo_panel.Controls.Add(uc);
         }
+
+        private void labdarugas_btn_Click_1(object sender, EventArgs e)
+        {
+            fociUC uc = new fociUC();
+            fo_panel.Controls.Clear();
+            fo_panel.Controls.Add(uc);
+        }
     }
 }

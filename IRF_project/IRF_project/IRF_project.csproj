@@ -46,12 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fociUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fociUC.Designer.cs">
+      <DependentUpon>fociUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fooldal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fooldal.Designer.cs">
       <DependentUpon>Fooldal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Meccsek.cs" />
     <Compile Include="TennisUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,6 +68,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tennis_player.cs" />
+    <EmbeddedResource Include="fociUC.resx">
+      <DependentUpon>fociUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fooldal.resx">
       <DependentUpon>Fooldal.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="rankings_ATP.xml" />
+    <Content Include="results_PREM.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sport:content xmlns:sport="http://xml.sportsdirectinc.com/sport/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xml.sportsdirectinc.com/sport/v2 sport.xsd">
-  <tennis-content><sport><id>/sport/tennis</id><name>tennis</name></sport>
+  <tennis-content>
+    <sport>
+      <id>/sport/tennis</id>
+      <name>tennis</name>
+    </sport>
   <league-content>
     <league>
       <id>/sport/tennis/league:7</id>
@@ -23,7 +27,8 @@
           <rank>1</rank>
           <points>12390.0</points>
         </ranking>
-      </player-content><player-content><player><id>/sport/tennis/player:17</id><name type="first">Novak</name>
+      </player-content>
+      <player-content><player><id>/sport/tennis/player:17</id><name type="first">Novak</name>
       <name type="last">Djokovic</name>
       </player>
         <ranking>
