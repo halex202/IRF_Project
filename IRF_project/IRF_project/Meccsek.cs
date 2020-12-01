@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace IRF_project
 {
-    class Meccsek
+    public class Meccsek
     {
         public string Home_team { get; set; }
         public string Away_team { get; set; }
         public int Home_goals { get; set; }
         public int Away_goals { get; set; }
+        public Results Result { get; set; }
+
     }
 }

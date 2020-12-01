@@ -59,6 +59,7 @@
       <DependentUpon>Fooldal.cs</DependentUpon>
     </Compile>
     <Compile Include="Meccsek.cs" />
+    <Compile Include="Results.cs" />
     <Compile Include="TennisUC.cs">
       <SubType>UserControl</SubType>
     </Compile>

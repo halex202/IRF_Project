@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fooldal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Golf_btn = new System.Windows.Forms.Button();
-            this.Rugby_btn = new System.Windows.Forms.Button();
             this.labdarugas_btn = new System.Windows.Forms.Button();
             this.tenisz_btn = new System.Windows.Forms.Button();
             this.Clock = new System.Windows.Forms.Label();
@@ -49,8 +47,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.Golf_btn);
-            this.panel1.Controls.Add(this.Rugby_btn);
             this.panel1.Controls.Add(this.labdarugas_btn);
             this.panel1.Controls.Add(this.tenisz_btn);
             this.panel1.Controls.Add(this.Clock);
@@ -61,36 +57,6 @@
             this.panel1.Size = new System.Drawing.Size(200, 600);
             this.panel1.TabIndex = 0;
             // 
-            // Golf_btn
-            // 
-            this.Golf_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Golf_btn.FlatAppearance.BorderSize = 0;
-            this.Golf_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Golf_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Golf_btn.ForeColor = System.Drawing.Color.White;
-            this.Golf_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Golf_btn.Location = new System.Drawing.Point(0, 332);
-            this.Golf_btn.Name = "Golf_btn";
-            this.Golf_btn.Size = new System.Drawing.Size(200, 52);
-            this.Golf_btn.TabIndex = 8;
-            this.Golf_btn.Text = "Golf";
-            this.Golf_btn.UseVisualStyleBackColor = false;
-            // 
-            // Rugby_btn
-            // 
-            this.Rugby_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Rugby_btn.FlatAppearance.BorderSize = 0;
-            this.Rugby_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Rugby_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Rugby_btn.ForeColor = System.Drawing.Color.White;
-            this.Rugby_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Rugby_btn.Location = new System.Drawing.Point(0, 274);
-            this.Rugby_btn.Name = "Rugby_btn";
-            this.Rugby_btn.Size = new System.Drawing.Size(200, 52);
-            this.Rugby_btn.TabIndex = 7;
-            this.Rugby_btn.Text = "Rugby";
-            this.Rugby_btn.UseVisualStyleBackColor = false;
-            // 
             // labdarugas_btn
             // 
             this.labdarugas_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -99,7 +65,7 @@
             this.labdarugas_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labdarugas_btn.ForeColor = System.Drawing.Color.White;
             this.labdarugas_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labdarugas_btn.Location = new System.Drawing.Point(0, 216);
+            this.labdarugas_btn.Location = new System.Drawing.Point(0, 281);
             this.labdarugas_btn.Name = "labdarugas_btn";
             this.labdarugas_btn.Size = new System.Drawing.Size(200, 52);
             this.labdarugas_btn.TabIndex = 6;
@@ -115,7 +81,7 @@
             this.tenisz_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenisz_btn.ForeColor = System.Drawing.Color.White;
             this.tenisz_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tenisz_btn.Location = new System.Drawing.Point(3, 158);
+            this.tenisz_btn.Location = new System.Drawing.Point(0, 172);
             this.tenisz_btn.Name = "tenisz_btn";
             this.tenisz_btn.Size = new System.Drawing.Size(200, 52);
             this.tenisz_btn.TabIndex = 5;
@@ -227,8 +193,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Clock;
-        private System.Windows.Forms.Button Golf_btn;
-        private System.Windows.Forms.Button Rugby_btn;
         private System.Windows.Forms.Button labdarugas_btn;
         private System.Windows.Forms.Button tenisz_btn;
         private System.Windows.Forms.Panel fo_panel;
