@@ -75,7 +75,7 @@ namespace IRF_project
 
         private void Labdarugas_btn_Click(object sender, EventArgs e)
         {
-            LabdarugasUC uc = new LabdarugasUC();
+            TennisUC uc = new TennisUC();
             fo_panel.Controls.Clear();
             fo_panel.Controls.Add(uc);
         }

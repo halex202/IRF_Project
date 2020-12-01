@@ -52,11 +52,11 @@
     <Compile Include="Fooldal.Designer.cs">
       <DependentUpon>Fooldal.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabdarugasUC.cs">
+    <Compile Include="TennisUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LabdarugasUC.Designer.cs">
-      <DependentUpon>LabdarugasUC.cs</DependentUpon>
+    <Compile Include="TennisUC.Designer.cs">
+      <DependentUpon>TennisUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,8 +64,8 @@
     <EmbeddedResource Include="Fooldal.resx">
       <DependentUpon>Fooldal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabdarugasUC.resx">
-      <DependentUpon>LabdarugasUC.cs</DependentUpon>
+    <EmbeddedResource Include="TennisUC.resx">
+      <DependentUpon>TennisUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,8 +10,7 @@ namespace IRF_project
     {
        public string Name { get; set; }
        public int Ranking { get; set; }
-       public int Points { get; set; }
-       public DateTime date { get; set; }
+       public float Points { get; set; }
 
 
     }
