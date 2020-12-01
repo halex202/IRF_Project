@@ -9,9 +9,9 @@ namespace IRF_project
     public enum Results
     {
    
-     home_win = 0,
-     draw = 1,
-     away_win = 2
+     home_win,
+     draw,
+     away_win
         
     }
 }
