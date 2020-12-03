@@ -107,7 +107,7 @@ namespace IRF_project
    
         public void load_btn_Click(object sender, EventArgs e)
         {
-            filter(); //filterezés triggerelése azért ilyen módonb, hogy később el tudjuk érni a függvény által generált listát
+            filter(); //filterezés triggerelése azért ilyen módon, hogy később el tudjuk érni a függvény által generált listát
         }
         private List<Meccsek> filter()
         {
